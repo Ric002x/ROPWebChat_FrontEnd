@@ -18,4 +18,4 @@ export const SignUpSchema = z.object({
     password: z.string().min(1, {message: "Senha obrigatória"}).regex(/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9\s]).+$/, {message: "A senha deve conter pelo menos uma letra, um número, e um caractere especial"}).max(80, {message: "Senha muito grande"})
 })
 
-export type SingUpData = z.infer<typeof SignUpSchema>
+export type SignUpData = z.infer<typeof SignUpSchema>
