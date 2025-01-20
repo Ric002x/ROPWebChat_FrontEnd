@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ROPWebChat - FrontEnd
 
-## Getting Started
+## 📋Sobre
 
-First, run the development server:
+Este projeto é uma aplicação **FrontEnd** desenvolvida com React utilizando a biblioteca **Next.js**. Seu objetivo principal é fornecer um layout interativo e moderno para um chat virtual em tempo real, inspirado em aplicativos populares como o WhatsApp.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A aplicação é projetada para integrar-se perfeitamente a uma **API REST**, sendo responsável por consumir os dados necessários para exibir mensagens, contatos e status em tempo real, além de enviar novas mensagens ao servidor.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias
+- **React**: Biblioteca JavaScript para criação de interfaces.
+- **Next.js**: Framework React para renderização SSR/SSG.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Instalação
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone o repositório:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/Ric002x/TabelaPeriodica.git
+   ```
+2. Acesse o diretório do projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   cd ROPWebChat_Frontend
+   ```
+3. Instale as dependências:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Inicialização
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Execute o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+2. Acesse o projeto no navegador:
+    > Obs: Para usar essa aplicação, é necessário iniciar o Backend, disponível em: [ROPWebChat - Backend](https://github.com/Ric002x/ROPWebChat_Backend)
+
+   [http://localhost:3000](http://localhost:3000)
+
+## Licença
+Este projeto é licenciado sob a licença **MIT**. Consulte o arquivo `LICENSE` para mais informações.
