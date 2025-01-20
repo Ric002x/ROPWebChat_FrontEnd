@@ -1,4 +1,4 @@
-import { handleSingOut } from "@/lib/server/auth";
+import { handleSignOut } from "@/lib/server/auth";
 import { useAuthStore } from "@/stores/authStore"
 import { useChatStore } from "@/stores/chatStore"
 import { useTheme } from "next-themes"
@@ -13,7 +13,6 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
@@ -28,7 +27,7 @@ export const Header = () => {
     const pathname = usePathname();
 
     const handleLogOut = () => {
-        handleSingOut()
+        handleSignOut()
         setChat(null)
         clearUser()
         toast.success("Deslogado com sucesso", {position: "top-center"})

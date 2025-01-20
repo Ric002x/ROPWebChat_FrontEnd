@@ -1,6 +1,6 @@
 "use server";
 
-import { SignInData, SingUpData } from "@/lib/schemas/authSchema";
+import { SignInData, SignUpData } from "@/lib/schemas/authSchema";
 import { signIn, signUp } from "@/lib/requests";
 import { cookies } from "next/headers";
 import { User } from "@/types/User";
@@ -21,7 +21,7 @@ export const handleSignIn = async (data: SignInData) => {
     return response
 }
 
-export const handleSignUp = async (data: SingUpData) => {
+export const handleSignUp = async (data: SignUpData) => {
     const response = await signUp(data)
 
     if (response.data) {
@@ -53,7 +53,7 @@ export const handleGetUser = async () => {
     return null
 }
 
-export const handleSingOut = async () => {
+export const handleSignOut = async () => {
     (await cookies()).delete(process.env.NEXT_PUBLIC_AUTH_KEY as string)
     redirect("/auth/signin")
 }

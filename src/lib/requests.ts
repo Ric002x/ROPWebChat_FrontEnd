@@ -1,6 +1,6 @@
 import { APISignIn, APISignUp } from "@/types/Auth"
 import { api } from "./api"
-import { SignInData, SingUpData } from "@/lib/schemas/authSchema"
+import { SignInData, SignUpData } from "@/lib/schemas/authSchema"
 import { APIUpdateUser } from "@/types/User"
 import { APICreateChat, APIDeleteChat, APIGetChats } from "@/types/Chat"
 import { NewChatData } from "@/lib/schemas/chatSchema"
@@ -16,7 +16,7 @@ export const signIn = async (data: SignInData) => {
     })
 }
 
-export const signUp = async (data: SingUpData) => {
+export const signUp = async (data: SignUpData) => {
     return await api<APISignUp>({
         endpoint: "accounts/signup",
         method: "POST",
