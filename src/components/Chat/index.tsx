@@ -39,7 +39,7 @@ export const Chat = () => {
 
         if (attachment) formData.append('file', attachment);
         if (audio) formData.append('audio', audio);
-        if (text) formData.append('body', text);
+        if (text) formData.append('body', text); else formData.append('body', '');
 
         const response = await createChatMessage(chat.id, formData);
 

@@ -55,7 +55,7 @@ export const SignInPage = () => {
         <main className="h-app flex items-center justify-center overflow-auto px-6">
             <Card className="w-96">
                 <CardHeader>
-                    <CardTitle>Fazer</CardTitle>
+                    <CardTitle>Fazer login</CardTitle>
                     <CardDescription>Insira seu email e senha para acessar sua conta.</CardDescription>
                 </CardHeader>
 
