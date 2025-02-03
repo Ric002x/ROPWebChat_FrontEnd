@@ -5,7 +5,8 @@ import { useTheme } from "next-themes"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { toast } from "sonner";
-import Logo from "@/assets/logo.svg"
+import LogoDark from "@/assets/logo-dark.svg"
+import LogoLight from "@/assets/logo-light.svg"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Home, LogOut, Menu, Moon, Sun, User } from "lucide-react";
@@ -20,7 +21,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
   
 
 export const Header = () => {
-    const { setTheme } = useTheme();
+    const { theme, setTheme } = useTheme();
     const { user, clearUser } = useAuthStore();
     const { setChat, showChatsList, setShowChatsList } = useChatStore();
 
@@ -39,9 +40,9 @@ export const Header = () => {
                 <div className="hidden min-[480px]:block">
                     <Link href="/">
                         <Image
-                            src={Logo}
+                            src={theme === "light" ? LogoLight : LogoDark}
                             alt="Logo GRF Talk"
-                            width={170}
+                            height={40}
                             priority
                         />
                     </Link>
