@@ -7,13 +7,13 @@ Este projeto é uma aplicação **FrontEnd** desenvolvida com React utilizando a
 A aplicação é projetada para integrar-se perfeitamente a uma **API REST**, sendo responsável por consumir os dados necessários para exibir mensagens, contatos e status em tempo real, além de enviar novas mensagens ao servidor.
 
 
-## Tecnologias
+## 🖥️Tecnologias
 - **React**: Biblioteca JavaScript para criação de interfaces.
 - **Next.js**: Framework React para renderização SSR/SSG.
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
 
 
-## Instalação
+## 🔧Instalação
 
 1. Clone o repositório:
 
@@ -33,7 +33,8 @@ A aplicação é projetada para integrar-se perfeitamente a uma **API REST**, se
    yarn install
    ```
 
-## Inicialização
+
+## 📝Inicialização
 
 1. Execute o servidor de desenvolvimento:
 
@@ -44,9 +45,6 @@ A aplicação é projetada para integrar-se perfeitamente a uma **API REST**, se
    ```
 
 2. Acesse o projeto no navegador:
-    > Obs: Para usar essa aplicação, é necessário iniciar o Backend, disponível em: [ROPWebChat - Backend](https://github.com/Ric002x/ROPWebChat_Backend)
+    > Obs: Para usar essa aplicação, é necessário a inicialização do Backend, disponível em: [ROPWebChat - Backend](https://github.com/Ric002x/ROPWebChat_Backend)
 
    [http://localhost:3000](http://localhost:3000)
-
-## Licença
-Este projeto é licenciado sob a licença **MIT**. Consulte o arquivo `LICENSE` para mais informações.
